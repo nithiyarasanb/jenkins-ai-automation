@@ -1,0 +1,10 @@
+# Reference policy; the current Jenkinsfile explicitly scans CRITICAL and HIGH.
+severity:
+  scan: [CRITICAL, HIGH]
+  fail_on_scanner_error: true
+ai_remediation:
+  enabled_by_default: true
+  max_findings_per_request: 10
+  require_human_approval: true
+  auto_merge: false
+  auto_deploy: false
